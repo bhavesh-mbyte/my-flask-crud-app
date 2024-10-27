@@ -64,6 +64,7 @@ http://127.0.0.1:5000/
 
 ###  Project Structure
 
+```bash
 my-flask-crud-app/
 ├── app.py                # Main application file
 ├── models.py             # Database model file
@@ -75,3 +76,4 @@ my-flask-crud-app/
 │   └── index.html
 ├── requirements.txt      # Python dependencies
 └── README.md             # Project readme file
+```
