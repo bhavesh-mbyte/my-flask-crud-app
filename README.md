@@ -24,3 +24,14 @@ A simple CRUD (Create, Read, Update, Delete) web application built with Flask, S
 ```bash
 git clone https://github.com/bhavesh-mbyte/my-flask-crud-app.git
 cd my-flask-crud-app
+```
+### 2. Set Up a Virtual Environment
+
+It’s recommended to use a virtual environment for project dependencies:
+```bash
+python -m venv venv
+# On Windows use:
+venv\Scripts\activate
+# On macOS/Linux use:
+source venv/bin/activate
+```
