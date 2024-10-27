@@ -35,3 +35,43 @@ venv\Scripts\activate
 # On macOS/Linux use:
 source venv/bin/activate
 ```
+### 3. Install Requirements
+
+Install the required Python packages:
+```bash
+pip install -r requirements.txt
+```
+### 4. Run the Application
+
+Initialize the SQLite database and run the Flask application:
+```bash
+# Set up environment variable
+export FLASK_APP=app.py  # On Windows use: set FLASK_APP=app.py
+
+# Create the database tables
+flask shell
+from models import db
+db.create_all()
+exit()
+
+# Run the application
+flask run
+```
+### 5. Access the Application
+
+Once the server is running, open a browser and go to:
+http://127.0.0.1:5000/
+
+###  Project Structure
+
+my-flask-crud-app/
+├── app.py                # Main application file
+├── models.py             # Database model file
+├── templates/            # HTML templates
+│   ├── master.html
+│   ├── create.html
+│   ├── update.html
+│   ├── delete.html
+│   └── index.html
+├── requirements.txt      # Python dependencies
+└── README.md             # Project readme file
